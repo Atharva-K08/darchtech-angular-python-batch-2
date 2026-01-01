@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-color: #136a7b;
+  --secondary-color: #251a37;
+  --text-secondary: #BEBBC3;
+}
+
+.theme-text {
+  color: var(--primary-color) !important;
+}
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.dropdown-item {
+  padding: 10px;
+}
+.footer-top {
+  padding: 5vw;
+  background-color: var(--secondary-color);
+  color: var(--text-secondary) !important;
+}
+
+.footer-ul li > a {
+  text-decoration: none; 
+  color: var(--text-secondary);
+}
+.footer-ul li > a:hover {
+  color: var(--primary-color) !important;
+}
