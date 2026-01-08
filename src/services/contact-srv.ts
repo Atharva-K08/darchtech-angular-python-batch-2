@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ContactSrv {
-  baseURL:string = 'http://127.0.0.1:3000/api'
+  baseURL:string = 'http://127.0.0.1:8000/api'
   constructor(private http:HttpClient){}
 
   sendMessage(msg:any) {
-    return this.http.post(`${this.baseURL}/contact`, msg)
+    return this.http.post(`${this.baseURL}/contact/`, msg)
   }
 }
